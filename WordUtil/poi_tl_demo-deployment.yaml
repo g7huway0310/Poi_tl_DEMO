@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: poi-tl-demo-deployment
+  labels:
+    app: poi-tl-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: poi-tl-demo
+  template:
+    metadata:
+      labels:
+        app: poi-tl-demo
+    spec:
+      containers:
+      - name: poi-tl-demo
+        image: huway0310/poi_tl_demo:0.0.1-SNAPSHOT
+        env:
+        - name: "PORT"
+          value: "8080"
