@@ -114,32 +114,32 @@ public class Poi_tl_wordUtil {
 		}
 	}
 
-	// 測試
-	public static void main(String[] args) {
-
-		// 處理日期轉換成民國
-		Calendar c = Calendar.getInstance();
-		c.setTimeInMillis(System.currentTimeMillis());
-		int year = c.get(Calendar.YEAR) - 1911;
-		int month = c.get(Calendar.MONTH) + 1;
-		int day = c.get(Calendar.DAY_OF_MONTH);
-		System.out.print("民國" + year + "年");
-		System.out.print(month + "月");
-		System.out.println(day + "日");
-
-		// 用一個map將標籤替換指定文字
-		Map<String, String> testMap = new HashMap<String, String>();
-		testMap.put("Name", "王大大");
-		testMap.put("year", Integer.toString(year));
-		testMap.put("month", Integer.toString(month));
-		testMap.put("day", Integer.toString(day));
-		testMap.put("minister", "Kumamon");
-
-		Poi_tl_wordUtil.replaceWord("/Users/guowei/Desktop/certificate.docx", testMap);
-
-		System.out.println("執行完畢");
-
-	}
+//	// 測試
+//	public static void main(String[] args) {
+//
+//		// 處理日期轉換成民國
+//		Calendar c = Calendar.getInstance();
+//		c.setTimeInMillis(System.currentTimeMillis());
+//		int year = c.get(Calendar.YEAR) - 1911;
+//		int month = c.get(Calendar.MONTH) + 1;
+//		int day = c.get(Calendar.DAY_OF_MONTH);
+//		System.out.print("民國" + year + "年");
+//		System.out.print(month + "月");
+//		System.out.println(day + "日");
+//
+//		// 用一個map將標籤替換指定文字
+//		Map<String, String> testMap = new HashMap<String, String>();
+//		testMap.put("Name", "王大大");
+//		testMap.put("year", Integer.toString(year));
+//		testMap.put("month", Integer.toString(month));
+//		testMap.put("day", Integer.toString(day));
+//		testMap.put("minister", "Kumamon");
+//
+//		Poi_tl_wordUtil.replaceWord("/Users/guowei/Desktop/certificate.docx", testMap);
+//
+//		System.out.println("執行完畢");
+//
+//	}
 	
 	
 

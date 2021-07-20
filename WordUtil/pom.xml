@@ -12,7 +12,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>WordUtil</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>WordUtil</name>
+	<name>ＷordUtil</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -24,15 +24,18 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>com.deepoove</groupId>
 			<artifactId>poi-tl</artifactId>
 			<version>1.10.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -59,7 +62,7 @@
 					</from>
 					<to>
 						<!--image名稱和tag，使用了mvn内置變數${project.version}，表示當前的version -->
-						<image>registry.hub.docker.com/huway0310/poi_tl_demo:${project.version}</image>
+						<image>registry.hub.docker.com/huway0310/wordutil:${project.version}</image>
 					</to>
 					<!--容器相關的属性 -->
 					<container>
@@ -71,6 +74,7 @@
 						<useCurrentTimestamp>true</useCurrentTimestamp>
 					</container>
 				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
