@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: poitldemo-deployment
+  name: wordutil-deployment
   labels:
-    app: poitldemo
+    app: wordutil
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: poitldemo
+      app: wordutil
   template:
     metadata:
       labels:
-        app: poitldemo
+        app: wordutil
     spec:
       containers:
-      - name: poi-tl-demo
-        image: /huway0310/poitldemo:0.0.1-SNAPSHOT
+      - name: wordutil
+        image: huway0310/wordutil:0.0.1-SNAPSHOT
         env:
         - name: "PORT"
           value: "8080"

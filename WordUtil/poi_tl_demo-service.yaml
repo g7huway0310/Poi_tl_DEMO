@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: poitldemo
+  name: wordutil
 spec:
   type: LoadBalancer
   selector:
-    app: poitldemo
+    app: wordutil
   ports:
   - protocol: TCP
     port: 60000
