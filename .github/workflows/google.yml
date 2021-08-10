@@ -17,13 +17,6 @@ on:
     branches:
     - master
 
-env:
-  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: autopilot-cluster-2   # TODO: update to cluster name
-  GKE_ZONE: asia-southeast1   # TODO: update to cluster zone
-  DEPLOYMENT_NAME: wordutil # TODO: update to deployment name
-  IMAGE: myimage
-
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
