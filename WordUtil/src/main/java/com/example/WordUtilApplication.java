@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class WordUtilApplication {
 	
 	public static void main(String[] args) {
-		//CIdockerHubn
+		//CItest 
 		SpringApplication.run(WordUtilApplication.class, args);
 		
 	}
