@@ -21,7 +21,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import com.deepoove.poi.XWPFTemplate;
-import com.example.demo.WordUtilApplication;
+import com.example.WordUtilApplication;
 
 @Service
 public class Poi_tl_wordUtil {
