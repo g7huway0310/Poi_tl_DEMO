@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: wordutil
-        image: huway0310/wordutil:0.0.1-SNAPSHOT
+        image: huway0310/wordutil:latest
         env:
         - name: "PORT"
           value: "8080"
