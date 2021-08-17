@@ -44,6 +44,6 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/wordutil:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/wordutil
         
  
