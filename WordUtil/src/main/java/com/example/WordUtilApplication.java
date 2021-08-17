@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class WordUtilApplication {
 	
 	public static void main(String[] args) {
-		//Cil
+		//Cils
 		SpringApplication.run(WordUtilApplication.class, args);
 		
 	}
