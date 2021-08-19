@@ -39,7 +39,7 @@
 				<div class="card-heading"></div>
 				<div class="card-body">
 					<h2 class="title">證書產生器</h2>
-					<form method="POST" action="/generateCertificate">
+					<form method="POST" action="/generateCertificate"enctype="multipart/form-data">
 						<div class="input-group">
 							<input class="input--style-1" type="text" placeholder="姓名"
 								name="name">
@@ -48,6 +48,11 @@
 							<input class="input--style-1" type="text" placeholder="部長"
 								name="minister">
 						</div>
+						
+						<div class="input-group">
+							<input class="input--style-1" type="file" name="file">
+						</div>
+						
 						<div class="input-group">
 							<input class="input--style-1" type="text" placeholder="證書名稱"
 								name="certificationName">
